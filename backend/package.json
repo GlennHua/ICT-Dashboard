@@ -1,0 +1,40 @@
+{
+  "name": "minfotech-internship-template-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "cross-env PORT=3001 nodemon -r esm ./src/server.js",
+    "production": "cross-env NODE_ENV=production PORT=3000 node -r esm ./src/server.js",
+    "init-db": "node -r esm ./src/db/init-db.js",
+    "init-db-new": "node -r esm ./src/db/init-dbNew.js",
+    "clear-db": "node -r esm ./src/db/clear-db.js",
+    "test": "mocha --require @babel/register --timeout 3000 --exit --recursive ./src/test/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dayjs": "^1.10.7",
+    "dotenv": "^16.0.3",
+    "dummy-json": "^3.0.4",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "multer": "^1.4.4-lts.1",
+    "uuid": "^8.3.2",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/register": "^7.21.0",
+    "chai": "^4.3.7",
+    "cross-env": "^7.0.3",
+    "esm": "^3.2.25",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}

@@ -1,0 +1,31 @@
+@keyframes catOpenAnimation {
+    0% {
+      background-image: url('../../Asset/cat-open.png');
+    }
+    20% {
+      background-image: url('../../Asset/cat-close.png');
+    }
+    40% {
+      background-image: url('../../Asset/cat-open.png');
+    }
+    60% {
+      background-image: url('../../Asset/cat-close.png');
+    }
+    80% {
+      background-image: url('../../Asset/cat-open.png');
+    }
+    100% {
+      background-image: url('../../Asset/cat-close.png');
+    }
+  }
+  
+  .catContainer {
+    animation-duration: 0.5s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+  }
+  
+  .catContainerOpen {
+    animation-name: catOpenAnimation;
+  }
+  
